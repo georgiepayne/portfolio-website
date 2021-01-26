@@ -191,3 +191,63 @@ footer{
 #hide{
   display: none;
 }
+
+
+.about-me{
+  display: flex;
+  background-color: var(--light-peach);
+  color: white;
+}
+
+.about-me img{
+  width: clamp(200px, 40%, 600px);
+}
+
+.about-me a{
+  float: right;
+  margin: 1rem;
+  color: var(--dark-peach);
+  font-size: max(0.75rem, 1.75vw);
+}
+
+.about-me h2{
+  border: 2px solid var(--dark-peach);
+  padding: max(0.5rem, 1vw);
+  margin: 2rem auto;
+  font-size: max(1.25rem, 2.25vw);
+  width: 30%;
+  text-align: center;
+}
+
+.about-me p{
+  text-align: center;
+  font-size: max(0.75rem, 1.75vw);
+  margin: 2rem;
+}
+
+.dogs-about{
+  display: flex;
+  float: right;
+}
+
+.dogs-about img{
+  width: 35vw;
+  float: right;
+}
+
+.dogs-text{
+  font-size: max(0.75rem, 1.75vw);
+  color: var(--medium-peach);
+  padding: 0 15rem;
+  text-align: center;
+  margin: auto 0;
+  display: flex;
+  align-content: center;
+}
+
+.dogs-text .arrow{
+  color: var(--dark-peach);
+  margin: auto 0;
+  padding: 2rem;
+  font-size: max(2rem, 4vw);
+}
