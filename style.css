@@ -193,8 +193,8 @@ footer{
 #menu {
   display: none;
   background: white;
-  height: 42rem;
-  width: 25%;
+  height: 110vh;
+  width: clamp(5rem, 30%, 20vw);
   float: right;
   margin-top: -3.75rem;
   margin-right: -2rem;
@@ -211,7 +211,7 @@ footer{
 
 #close-menu{
   display: none;
-  margin-right: 6rem;
+  margin-right: max(5rem, 20vw);
 }
 
 .hide{
@@ -456,7 +456,7 @@ footer{
 
 @keyframes menu-open {
   0%{
-    transform: translateX(7rem)
+    transform: translateX(7rem);
   }
 
   100%{
@@ -466,10 +466,12 @@ footer{
 
 @keyframes menu-close {
   0%{
-    transform: translateX(0)
+    width: 30%;
+    transform: translateX(0);
   }
 
   100%{
+    width: 0%;
     transform: translateX(7rem);
   }
 }
