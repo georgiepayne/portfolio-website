@@ -89,11 +89,17 @@ nav a{
   padding: 1rem;
 }
 
+.line{
+  height: 1px;
+  width: 60%;
+  background-color: var(--dark-peach);
+}
+
 .coding-projects{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: max(3rem, 6vw);
 }
 
 figure{
@@ -103,7 +109,7 @@ figure{
 }
 
 figure a{
-  width: clamp(300px, 70%, 600px);
+  width: clamp(200px, 50%, 500px);
 }
 
 figure img{
@@ -113,17 +119,7 @@ figure img{
 figcaption{
   width: 20%;
   text-align: center;
-  font-size: max(1rem, 2vw);
-}
-
-.coding-projects .arrow{
-  color: var(--medium-peach);
-  font-size: max(2rem, 4vw);
-}
-
-.coding-projects .arrow:hover{
-  color: var(--dark-peach);
-  cursor: pointer;
+  font-size: max(0.75rem, 1.5vw);
 }
 
 .art-container{
@@ -360,7 +356,7 @@ footer{
   }
 
   figure a{
-    width: clamp(200px, 95%, 600px)
+    width: clamp(200px, 95%, 600px);
   }
 
   figcaption{
@@ -368,9 +364,8 @@ footer{
     font-size: 1rem;
   }
 
-  .coding-container .arrow{
-    margin: 0;
-    padding: 0;
+  .line{
+    margin-top: 1.5rem;
   }
 
   .art-container h2{
