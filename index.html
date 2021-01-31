@@ -20,17 +20,20 @@
             <a href="#home">home</a>
             <a href="#projects">projects</a>
             <a href="./about.html">about</a>
-            <i class="fas fa-bars" id="hide"></i>
           </nav>
-          <nav class="side-nav" id="hide">
-            <a href="#home">home</a>
-            <a href="#projects">projects</a>
-            <a href="./about.html">about</a>
-          </nav>
+          <i class="fas fa-bars" id="open-menu"></i>
+          <i class="fas fa-times" id="close-menu"></i>
         </header>
+        <nav class="side-nav" id="menu">
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="./about.html">about</a></li>
+          </ul>
+        </nav>
         <div class="hero-container">
           <h2>Hello! My name is Georgie Payne and I am a web development student.</h2>
-          <div class="arrow">&#8594</div>
+          <div class="arrow" id="first-arrow">&#8594</div>
           <div class="arrow" id="hide">&#8595</div>
           <a href="#projects">Explore my work</a>
         </div>
@@ -84,5 +87,6 @@
         </div>
       </footer>  
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
